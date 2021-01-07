@@ -1,0 +1,403 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local KinxHub = Instance.new("ScreenGui")
+local Hub = Instance.new("Frame")
+local Title = Instance.new("Frame")
+local Title_2 = Instance.new("TextLabel")
+local Side = Instance.new("Frame")
+local Credits = Instance.new("TextButton")
+local Main = Instance.new("TextButton")
+local Roundify = Instance.new("ImageLabel")
+local Help = Instance.new("TextButton")
+local Roundify_2 = Instance.new("ImageLabel")
+local Functions = Instance.new("Frame")
+local Noclip = Instance.new("TextButton")
+local Value = Instance.new("TextBox")
+local Speed = Instance.new("TextButton")
+local Jump = Instance.new("TextButton")
+local Split = Instance.new("Frame")
+local CreditsFrame = Instance.new("Frame")
+local Title_3 = Instance.new("TextLabel")
+local Credit1 = Instance.new("TextLabel")
+local Credit2 = Instance.new("TextLabel")
+local help = Instance.new("Frame")
+local Title_4 = Instance.new("TextLabel")
+local Credit1_2 = Instance.new("TextLabel")
+local Credit2_2 = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+
+--Properties:
+
+KinxHub.Name = "KinxHub"
+KinxHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Hub.Name = "Hub"
+Hub.Parent = KinxHub
+Hub.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+Hub.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Hub.BorderSizePixel = 0
+Hub.Position = UDim2.new(0.378540158, 0, 0.246897578, 0)
+Hub.Size = UDim2.new(0, 319, 0, 271)
+Hub.Visible = false
+
+Title.Name = "Title"
+Title.Parent = Hub
+Title.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+Title.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Title.Position = UDim2.new(-0.346901238, 0, -0.165398866, 0)
+Title.Size = UDim2.new(0, 429, 0, 32)
+
+Title_2.Name = "Title"
+Title_2.Parent = Title
+Title_2.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Position = UDim2.new(-0.00466015469, 0, -0.0542365313, 0)
+Title_2.Size = UDim2.new(0, 430, 0, 33)
+Title_2.ZIndex = 2
+Title_2.Font = Enum.Font.SourceSansLight
+Title_2.Text = "SpaX                                                              Paid"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+Side.Name = "Side"
+Side.Parent = Hub
+Side.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+Side.BackgroundTransparency = 1.000
+Side.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Side.BorderSizePixel = 0
+Side.Position = UDim2.new(-0.318688035, 0, 0.0252049416, 0)
+Side.Size = UDim2.new(0, 110, 0, 271)
+
+Credits.Name = "Credits"
+Credits.Parent = Side
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(-0.0272727236, 0, 0.199261978, 0)
+Credits.Size = UDim2.new(0, 95, 0, 25)
+Credits.ZIndex = 2
+Credits.Font = Enum.Font.SourceSansLight
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
+Main.Name = "Main"
+Main.Parent = Side
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.Position = UDim2.new(-0.0272727236, 0, 0.0332103223, 0)
+Main.Size = UDim2.new(0, 95, 0, 25)
+Main.ZIndex = 2
+Main.Font = Enum.Font.SourceSansLight
+Main.Text = "Main"
+Main.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main.TextScaled = true
+Main.TextSize = 14.000
+Main.TextWrapped = true
+
+Roundify.Name = "Roundify"
+Roundify.Parent = Side
+Roundify.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify.BackgroundTransparency = 1.000
+Roundify.Position = UDim2.new(0.404545456, 0, 0.474482477, 0)
+Roundify.Size = UDim2.new(0.645454526, 24, 0.912064433, 24)
+Roundify.Image = "rbxassetid://3570695787"
+Roundify.ImageColor3 = Color3.fromRGB(43, 43, 43)
+Roundify.ScaleType = Enum.ScaleType.Slice
+Roundify.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify.SliceScale = 0.120
+
+Help.Name = "Help"
+Help.Parent = Side
+Help.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Help.BackgroundTransparency = 1.000
+Help.Position = UDim2.new(-0.0272727236, 0, 0.343173414, 0)
+Help.Size = UDim2.new(0, 95, 0, 25)
+Help.ZIndex = 2
+Help.Font = Enum.Font.SourceSansLight
+Help.Text = "Help"
+Help.TextColor3 = Color3.fromRGB(255, 255, 255)
+Help.TextScaled = true
+Help.TextSize = 14.000
+Help.TextWrapped = true
+
+Roundify_2.Name = "Roundify"
+Roundify_2.Parent = Hub
+Roundify_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_2.BackgroundTransparency = 1.000
+Roundify_2.Position = UDim2.new(0.3213166, 0, 0.416974157, 0)
+Roundify_2.Size = UDim2.new(1.31974924, 24, 1.12915134, 24)
+Roundify_2.ZIndex = 0
+Roundify_2.Image = "rbxassetid://3570695787"
+Roundify_2.ImageColor3 = Color3.fromRGB(36, 36, 36)
+Roundify_2.ScaleType = Enum.ScaleType.Slice
+Roundify_2.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_2.SliceScale = 0.120
+
+Functions.Name = "Functions"
+Functions.Parent = Hub
+Functions.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Functions.BackgroundTransparency = 1.000
+Functions.Position = UDim2.new(0.341692775, 0, 0.221402213, 0)
+Functions.Size = UDim2.new(0, 100, 0, 100)
+Functions.Visible = false
+
+Noclip.Name = "Noclip"
+Noclip.Parent = Functions
+Noclip.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Noclip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Noclip.Position = UDim2.new(-0.93670845, 0, 0.254243523, 0)
+Noclip.Size = UDim2.new(0, 93, 0, 33)
+Noclip.Font = Enum.Font.SourceSansLight
+Noclip.Text = "Noclip"
+Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.TextScaled = true
+Noclip.TextSize = 14.000
+Noclip.TextWrapped = true
+
+Value.Name = "Value"
+Value.Parent = Functions
+Value.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Value.BackgroundTransparency = 0.800
+Value.BorderSizePixel = 0
+Value.Position = UDim2.new(-1.10000002, 0, 1.94726944, 0)
+Value.Size = UDim2.new(0, 319, 0, 16)
+Value.Font = Enum.Font.SourceSansLight
+Value.PlaceholderText = "Value"
+Value.Text = ""
+Value.TextColor3 = Color3.fromRGB(255, 255, 255)
+Value.TextScaled = true
+Value.TextSize = 14.000
+Value.TextWrapped = true
+
+Speed.Name = "Speed"
+Speed.Parent = Functions
+Speed.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Speed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Speed.Position = UDim2.new(-0.93670845, 0, -0.450959414, 0)
+Speed.Size = UDim2.new(0, 93, 0, 33)
+Speed.Font = Enum.Font.SourceSansLight
+Speed.Text = "Speed"
+Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Speed.TextScaled = true
+Speed.TextSize = 14.000
+Speed.TextWrapped = true
+
+Jump.Name = "Jump"
+Jump.Parent = Functions
+Jump.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Jump.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Jump.Position = UDim2.new(1.05322886, 0, -0.450959384, 0)
+Jump.Size = UDim2.new(0, 93, 0, 33)
+Jump.Font = Enum.Font.SourceSansLight
+Jump.Text = "Jump"
+Jump.TextColor3 = Color3.fromRGB(255, 255, 255)
+Jump.TextScaled = true
+Jump.TextSize = 14.000
+Jump.TextWrapped = true
+
+Split.Name = "Split"
+Split.Parent = Functions
+Split.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Split.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Split.Position = UDim2.new(0.502727032, 0, -0.515205085, 0)
+Split.Size = UDim2.new(0, 0, 0, 246)
+
+CreditsFrame.Name = "CreditsFrame"
+CreditsFrame.Parent = Hub
+CreditsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsFrame.BackgroundTransparency = 1.000
+CreditsFrame.Position = UDim2.new(0.341692775, 0, 0.280442804, 0)
+CreditsFrame.Size = UDim2.new(0, 100, 0, 100)
+CreditsFrame.Visible = false
+
+Title_3.Name = "Title"
+Title_3.Parent = CreditsFrame
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.Position = UDim2.new(-0.5, 0, -0.770000041, 0)
+Title_3.Size = UDim2.new(0, 200, 0, 50)
+Title_3.Font = Enum.Font.SourceSans
+Title_3.Text = "CREDITS"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextScaled = true
+Title_3.TextSize = 14.000
+Title_3.TextWrapped = true
+
+Credit1.Name = "Credit 1"
+Credit1.Parent = CreditsFrame
+Credit1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit1.BackgroundTransparency = 1.000
+Credit1.Position = UDim2.new(-0.5, 0, -0.160000026, 0)
+Credit1.Size = UDim2.new(0, 200, 0, 50)
+Credit1.Font = Enum.Font.SourceSans
+Credit1.Text = "BcusZ - Ui/Design"
+Credit1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credit1.TextScaled = true
+Credit1.TextSize = 14.000
+Credit1.TextWrapped = true
+
+Credit2.Name = "Credit 2"
+Credit2.Parent = CreditsFrame
+Credit2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit2.BackgroundTransparency = 1.000
+Credit2.Position = UDim2.new(-0.670000017, 0, 0.469999999, 0)
+Credit2.Size = UDim2.new(0, 235, 0, 43)
+Credit2.Font = Enum.Font.SourceSans
+Credit2.Text = "amstuckstepbro - Scripts"
+Credit2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credit2.TextScaled = true
+Credit2.TextSize = 14.000
+Credit2.TextWrapped = true
+
+help.Name = "help"
+help.Parent = Hub
+help.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+help.BackgroundTransparency = 1.000
+help.Position = UDim2.new(0.341692775, 0, 0.280442804, 0)
+help.Size = UDim2.new(0, 100, 0, 100)
+
+Title_4.Name = "Title"
+Title_4.Parent = help
+Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.BackgroundTransparency = 1.000
+Title_4.Position = UDim2.new(-0.5, 0, -0.770000041, 0)
+Title_4.Size = UDim2.new(0, 200, 0, 50)
+Title_4.Font = Enum.Font.SourceSans
+Title_4.Text = "Help?"
+Title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.TextScaled = true
+Title_4.TextSize = 14.000
+Title_4.TextWrapped = true
+
+Credit1_2.Name = "Credit 1"
+Credit1_2.Parent = help
+Credit1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit1_2.BackgroundTransparency = 1.000
+Credit1_2.Position = UDim2.new(-0.5, 0, -0.160000026, 0)
+Credit1_2.Size = UDim2.new(0, 200, 0, 50)
+Credit1_2.Font = Enum.Font.SourceSans
+Credit1_2.Text = "Discord - Lev#5856"
+Credit1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credit1_2.TextScaled = true
+Credit1_2.TextSize = 14.000
+Credit1_2.TextWrapped = true
+
+Credit2_2.Name = "Credit 2"
+Credit2_2.Parent = help
+Credit2_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit2_2.BackgroundTransparency = 1.000
+Credit2_2.Position = UDim2.new(-0.670000017, 0, 0.469999999, 0)
+Credit2_2.Size = UDim2.new(0, 235, 0, 43)
+Credit2_2.Font = Enum.Font.SourceSans
+Credit2_2.Text = "Updates - Weekly/Wednesdays"
+Credit2_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credit2_2.TextScaled = true
+Credit2_2.TextSize = 14.000
+Credit2_2.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = Hub
+Close.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Close.Position = UDim2.new(0.702194393, 0, -0.280442834, 0)
+Close.Size = UDim2.new(0, 93, 0, 24)
+Close.ZIndex = 0
+Close.Font = Enum.Font.SourceSansLight
+Close.Text = "-Close-"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+Open.Name = "Open"
+Open.Parent = KinxHub
+Open.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Open.Position = UDim2.new(0, 0, 0.361266315, 0)
+Open.Size = UDim2.new(0, 79, 0, 27)
+Open.Font = Enum.Font.SourceSansLight
+Open.Text = "SpaX"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+--scripts
+KinxHub.ResetOnSpawn = false
+
+Speed.MouseButton1Click:Connect(function(Plr)
+	local Value = Value.Text
+	local Humanoid = game.Workspace.amstuckstepbro.Humanoid
+	Humanoid.WalkSpeed = Value
+end)
+
+Jump.MouseButton1Click:Connect(function(Plr)
+	local Value = Value.Text
+	local Humanoid = game.Workspace.amstuckstepbro.Humanoid
+	Humanoid.JumpPower = Value
+end)
+
+Open.MouseButton1Click:Connect(function()
+	Hub.Visible = true
+end)
+
+Close.MouseButton1Click:Connect(function()
+	Hub.Visible = false
+end)
+
+Main.MouseButton1Click:Connect(function()
+	Functions.Visible = true
+	help.Visible = false
+	CreditsFrame.Visible = false
+end)
+
+Credits.MouseButton1Click:Connect(function()
+	Functions.Visible = false
+	help.Visible = false
+	CreditsFrame.Visible = true
+end)
+
+Help.MouseButton1Click:Connect(function()
+	Functions.Visible = false
+	help.Visible = true
+	CreditsFrame.Visible = false
+end)
+
+Noclip.MouseButton1Click:Connect(function(Plr)
+	noclip = false
+	game:GetService('RunService').Stepped:connect(function()
+		if noclip then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end)
+	local	plr = game.Players.LocalPlayer
+	local	mouse = plr:GetMouse()
+	mouse.KeyDown:connect(function(key)
+
+		if key == "e" then
+			noclip = not noclip
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end)
+	print('Created by FileExplorer')
+	print('Credits to Peyton for the ChangeState part of this script')
+end)
+-- Drag
+local function DRAG()
+	local script = Instance.new("Script", KinxHub)
+
+	local frame = script.Parent.Hub 
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+
+coroutine.wrap(DRAG)()
